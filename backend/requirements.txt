@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+spacy
+language-tool-python
+openai
+pydantic
