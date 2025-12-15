@@ -11,8 +11,27 @@
 
 ## 使い方
 
-1. **起動**:
+1. **セットアップと起動**:
+   
+   **バックエンド (Python)**:
    ```bash
+   # 依存関係のインストール
+   pip install -r backend/requirements.txt
+   
+   # spaCyモデルのダウンロード
+   python -m spacy download ja_core_news_sm
+   
+   # サーバー起動 (別ターミナルで実行)
+   python backend/main.py
+   ```
+   バックエンドは `http://localhost:8000` で起動します。
+
+   **フロントエンド (Node.js)**:
+   ```bash
+   # 依存関係のインストール
+   npm install
+
+   # 開発サーバー起動
    npm run dev
    ```
    ブラウザで `http://localhost:5173` を開きます。
